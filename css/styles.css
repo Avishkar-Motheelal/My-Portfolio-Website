@@ -1,0 +1,38 @@
+.content {
+    margin:auto;
+    text-align: left;
+    justify-content: left;
+    display: block;
+    max-width: 80%;
+    height: auto;
+    background-color: rgb(171, 171, 171);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: rgb(98, 98, 98);
+    margin:auto;
+    padding-top: 10px;
+}
+
+img {
+    max-width: 120px;
+    height: auto;
+    width: auto;
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.details {
+    margin-top: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.main {
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 10px;
+}
