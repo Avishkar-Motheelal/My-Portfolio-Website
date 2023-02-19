@@ -1,7 +1,6 @@
 body {
   color: white;
   margin: 0;
-  background-color: #000000;
 }
 
 nav {
@@ -24,24 +23,18 @@ nav {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.2em;
 }
 
 #menu li a:hover {
   background-color: #1a1a1a;
 }
 
-.content {
-  text-align: left;
-  background-color: rgb(171, 171, 171);
-}
-
-.content > * {
+.content > div {
   padding: 20px;
 }
 
 .content p {
-
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -49,22 +42,37 @@ nav {
 
 img {
   max-width: 200px;
-  height: auto;
-  width: auto;
   border-radius: 50%;
-}
-
-.subsection {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 0;
 }
 
 .card {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
   margin: auto;
+}
+
+.card-heading {
+  margin: 0 0 16px 0
+}
+
+.card-sub-heading {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.card-date {
+  margin: 5px 0 10px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 10px 0 10px 0;
+  margin: auto;
+  width: 85%;
+  text-align: left;
 }
 
 .column {
@@ -90,7 +98,7 @@ img {
 #details {
   background-color: #000000;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -102,35 +110,20 @@ img {
   text-align: center;
 }
 
-.cardHeading {
-  margin: 0 0 16px 0
+#details a:before {
+  color: #2727ff;
 }
 
-.cardSubHeading {
-  margin: 0;
-  font-size: 1.15em;
-  font-weight: bold;
-}
-
-.cardDate {
-  margin: 5px 0 10px 0;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.cardContent {
-  padding: 10px 0 10px 0;
-  margin: auto;
-  width: 70%;
-  text-align: left;
+#details a:visited {
+  color: #7e46b6;
 }
 
 @media screen and (max-width: 900px) {
   #menu a {
-    font-size: medium;
+    font-size: 1em;
   }
 
-  .cardContent {
+  .card-content {
     width: 90%;
   }
 
