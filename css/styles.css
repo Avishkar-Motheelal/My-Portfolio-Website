@@ -110,8 +110,14 @@ img {
   text-align: center;
 }
 
+#details a {
+  font-family: inherit;
+  font-weight: 575;
+  font-size: 1.2em;
+}
+
 #details a:before {
-  color: #2727ff;
+  color: #ffffff;
 }
 
 #details a:visited {
